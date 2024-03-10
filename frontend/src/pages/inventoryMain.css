@@ -1,0 +1,338 @@
+@import url('https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600&family=Inter:wght@400;600;700&display=swap');
+html{
+    font-family: Inter, monospace;
+   
+}
+.body1{
+
+    margin-right:1em;
+   margin-bottom:10em;
+}
+.bold-header {
+    font-weight: bold;
+  }
+  
+    /* Styles for the dropdown container */
+
+.inventoryMain-container-forside {
+    max-height: 500px; /* Set the maximum height of the container */
+    overflow: auto; /* Enable scrolling when content exceeds the container height */
+    background-color: #f9f9f9; /* Set the background color of the container */
+    border: 1px solid #ccc; /* Add a border to the container */
+    border-radius: 5px; /* Add border radius to the container */
+    padding: 10px; /* Add padding to the container */
+  }
+  
+  .inventoryMain-container-forside > div {
+    margin-bottom: 10px; /* Add spacing between each selected item content */
+  }
+  
+  .low-quantity {
+    background-color: #ffcc00; /* Custom color value */
+    font-weight: bold;
+  }
+  
+  .bold-header {
+    font-weight: bold;
+  }
+  
+  .header-cell {
+    display: flex;
+    align-items: center;
+    ; /* Adjust the gap value as needed */
+  }
+  
+  .green-text {
+    color: green;
+  }
+  
+  .red-text {
+    color: red;
+  }
+  
+.inventoryMain-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    row-gap: 20px;
+
+    padding: 20px;
+    margin-bottom: 20px;
+    
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    flex-shrink: 0;
+    flex: 1;
+}
+.overall-inventory{
+    font-size: 20px;
+    font-weight: 700;
+    color: rgb(60, 60, 60);
+}
+.inventoryMain-sub-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    column-gap: 60px;
+}
+.dropdown{
+    margin-left: 5em;
+}
+/* Styles for the dropdown container */
+.dropdown-container {
+    position: relative;
+    display: inline-block;
+  }
+  
+  /* Styles for the dropdown button */
+  .dropdown-button {
+    background-color: #f1f1f1;
+    color: #333;
+    padding: 8px 12px;
+    border: 1px solid #ccc;
+    cursor: pointer;
+  }
+  
+  /* Styles for the dropdown content */
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    min-width: 160px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1);
+    z-index: 1;
+  }
+  
+  /* Styles for the dropdown content items */
+  .dropdown-content-item {
+    padding: 8px 12px;
+    cursor: pointer;
+  }
+  
+  /* Styles for the dropdown content items on hover */
+  .dropdown-content-item:hover {
+    background-color: #f9f9f9;
+  }
+  
+  /* Styles for showing the dropdown content when the dropdown button is clicked */
+  .dropdown-container.open .dropdown-content {
+    display: block;
+  }
+  
+@media (max-width: 950px) {
+    .inventoryMain-sub-container {
+
+      flex-direction: column;
+    }
+  }
+
+.inventoryMain-mini-container1, .inventoryMain-mini-container2,
+.inventoryMain-mini-container3{
+  display: flex;
+  flex-direction: row; /* Change to row */
+  justify-content: center;
+  align-items: start;
+  column-gap: 10px; /* Change to column-gap */
+  
+}
+
+
+.Total-Products{
+    color: rgb(44, 171, 107);
+    font-weight: 700;
+    background-color: rgb(236, 236, 236);
+
+    padding: 10px;
+    border-radius: 5px;
+    
+}
+.Total-Selling{
+    color: rgb(80, 44, 171);
+    font-weight: 700;
+    background-color: rgb(236, 236, 236);
+
+    padding: 10px;
+    border-radius: 5px;
+}
+.Low-Stocks{
+    color: rgb(171, 44, 74);
+    font-weight: 700;
+    background-color: rgb(236, 236, 236);
+
+    padding: 10px;
+    border-radius: 5px;
+}
+.inventory-value{
+    color: rgb(103, 103, 104);
+
+}
+
+.inventoryMain-container-table{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+   
+
+    padding: 10px;
+    background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    border-radius: 10px;
+}
+.inventoryMain-sub-container-table{
+    display: flex;
+    flex-direction: row;
+   justify-content: space-between;
+   align-items: center;
+
+   column-gap: 80px;
+
+}
+.Products, .Project-name, .Site-name{
+    font-size: 15px;
+    font-weight: 700;
+    color: rgb(60, 60, 60);
+    background-color: rgb(240, 240, 240);
+    padding: 10px;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    
+}
+.projectName, .siteName{
+    color: rgb(63, 63, 63);
+    font-weight: 500;
+    font-size: 18px;
+    width: 100%;
+    border-radius: 5px;
+}
+.All-Sites{
+    padding: 12px;
+    border-color: rgb(44, 118, 171);
+    color: rgb(44, 118, 171);
+    width: 200px;
+
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+}
+.warning {
+  background-color: orange;
+}
+
+
+.site-value{
+    color: rgb(44, 118, 171);
+   
+}
+
+  
+.search-main-inv, .search-main-supplier{
+  width: 30%;
+  margin: 5px;
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid gray;
+
+}
+.search-main-supplier{
+  width: 50%;
+}
+.stock{
+    display: flex;
+    flex-direction: row;
+   
+    justify-content: space-between;
+    align-items: center;
+    flex-shrink: 0;
+    flex: 1;
+ 
+}
+.In-stock{
+    color: rgb(60, 60, 60);
+    background-color: rgba(180, 249, 181, 0.816);
+    padding: 10px;
+    border-radius: 5px;
+   
+}
+.Low-stock{
+    color: rgb(60, 60, 60);
+    background-color: rgba(249, 230, 180, 0.816);
+    padding: 10px;
+    border-radius: 5px;
+ 
+}
+.Out-of-stock{
+    color: rgb(60, 60, 60);
+    background-color: rgba(249, 180, 180, 0.816);
+    padding: 10px;
+    border-radius: 5px;
+
+}
+.status-circle {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  margin-right: 8px;
+}
+
+.daily-mini-container-BOM{
+display: flex;
+flex-direction: row;
+justify-content: start;
+align-items: center;
+color: #3a3a3a;
+background-color: #e8e8e8;
+padding: 10px 30px;
+border-radius: 20px;
+font-size: 12px;
+font-weight: 600;
+width: 55%;
+cursor: pointer;
+}
+.bom-box{
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  align-items: center;
+  column-gap: 10px;
+  background-color: white;
+  padding: 12px;
+  border-radius: 8px;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  margin-bottom: 15px;
+}
+.select-bom{
+  width: 20%;
+}
+.label-transaction{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 15px;
+  font-weight: 600;
+  color: #4f4f4f;
+}
+
+.buttons-main-inv{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+
+
+}
+.title-main-inv{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+ 
+}
+.inventoryMain-sub-containers{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}

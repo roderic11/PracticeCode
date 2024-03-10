@@ -1,0 +1,453 @@
+
+
+.Head{
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+text-align: center; 
+padding:0;
+margin-bottom:7em;
+}
+
+.login-container {
+display: flex;
+height: 100vh;
+width:auto;
+position: fixed;
+top: 0;
+left: 0;
+right: 0;
+bottom: 0;
+z-index: 100;
+}
+
+.form-group {
+margin-top: 30px;
+}
+
+.login-form {
+width: 40%;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+background-color: #fff;
+padding: 20px;
+
+box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+z-index:1;
+}
+
+.login-image {
+width: 100%;
+height: 100%;
+background-image:url("building.png");
+background-size: cover;
+background-position: center center;
+position: relative;
+}
+.login-image::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 0;
+}
+
+
+@media (max-width: 320px) {
+  .login-container {
+    
+    position: fixed;
+    height: 100vh;
+    top: 0;
+    left: 50000;
+    right: 0;
+    bottom: 0;
+  }
+
+  .login-form {
+    width: 100%;
+
+  }
+  .login-image{
+    display: none;
+  }
+
+    /* Hide the overlay on smaller screens */
+    .overlay {
+        display: none;
+      }
+
+    /* Add the ::before style here as well to fill the background on smaller screens */
+  .login-container::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 0;
+  }
+
+  html {
+      font-size: 3vw; /* Increase the base font size for smaller screens */
+    }
+  
+    h1, h2, h3 {
+      font-size: 2em; /* Adjust the font size for headings on smaller screens */
+    }
+  
+    p {
+      font-size: 1.2em; /* Adjust the font size for paragraphs on smaller screens */
+    }
+
+          /* Adjust the input and label font sizes for smaller screens */
+  .input-field {
+      font-size: 3em;
+  }
+
+  label {
+      font-size: 2em;
+  }
+
+  /* Adjust the button font size and padding for smaller screens */
+  .button {
+      font-size: 3em;
+      padding: 2em 4em;
+  }
+}
+
+
+
+
+
+
+
+
+/* Input Fields */
+.input-field {
+  width: 100%;
+  max-width: 5000px;
+  height: 40px;
+  padding: 1.5em; /* Use vw units for padding as well to maintain consistency */
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  font-size: 1em; /* Use vw units for font size to make it responsive */
+  margin-bottom: 2em; /* Use vw units for margin as well */
+}
+
+.email-input {
+background-color: #f1f1f1;
+margin-bottom: 30px;
+}
+
+.password-input {
+background-color: #f5f5f5;
+margin-top:10px;
+}
+
+/* Label Styles */
+.form-group {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  font-size: 1em; 
+
+}
+
+.company-login-logo{
+height: 50px;
+width: 50px;
+
+}
+/* Hover Effect */
+.input-field:hover {
+border-color: #7FDBFF;
+}
+
+/* Focus Effect */
+.input-field:focus {
+outline: none;
+border-color: #7FDBFF;
+box-shadow: 0 0 5px #7FDBFF;
+}
+
+/* Button */
+.button {
+  background-color: #386F8A;
+  color: white;
+  border: none;
+  width: 20em; /* Use vw units for button width to make it responsive */
+  max-width: 1000px; /* Limit the maximum button width for larger screens */
+  border-radius: 7px;
+  cursor: pointer;
+  padding: 1em 3em; /* Use vw units for padding to maintain responsiveness */
+  font-size: 1em; /* Use vw units for font size to make it responsive */
+  transition: background-color 0.3s ease;
+  margin-top: 0em; /* Use vw units for margin as well */
+}
+
+.button:hover {
+background-color: darkblue;
+}
+
+.side-line-log{
+border-left: 3px solid #386F8A;
+display: flex;
+height: 90px;
+padding-left: -15px;
+padding-top: 10px;
+}
+.side-lines-log{
+border-right: 3px solid #386F8A;
+
+height: 90px;
+padding-right: -15px;
+padding-top: 10px;
+margin-right: 8px;
+
+}
+
+.overlay {
+  position: fixed;
+  height: 100vh;
+  top: 0;
+  left: 32%;
+  
+  bottom: 0;
+  color: white;
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  align-items: center;
+  font-size: 30px;
+  padding: 0px;
+  z-index: 1;
+  width: 100%;
+}
+
+.Head{
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+text-align: center; 
+padding:0;
+margin-bottom:7em;
+}
+
+.login-container {
+display: flex;
+height: 100vh;
+width:auto;
+position: fixed;
+top: 0;
+left: 0;
+right: 0;
+bottom: 0;
+z-index: 100;
+}
+
+.form-group {
+margin-top: 30px;
+}
+
+.login-form {
+width: 40%;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+background-color: #fff;
+padding: 20px;
+
+box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+z-index:1;
+}
+
+.login-image {
+width: 100%;
+height: 100%;
+background-image:url("building.png");
+background-size: cover;
+background-position: center center;
+position: relative;
+}
+.login-image::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 0;
+}
+.current-text-login{
+  font-size: 30px;
+}
+
+
+@media (max-width: 500px) {
+  .login-container {
+    
+    position: fixed;
+    height: 100vh;
+    top: 0;
+    left: 50000;
+    right: 0;
+    bottom: 0;
+  }
+
+  .login-form {
+    width: 100%;
+
+  }
+  .login-image{
+    display: none;
+  }
+
+    /* Hide the overlay on smaller screens */
+    .overlay {
+        display: none;
+      }
+
+    /* Add the ::before style here as well to fill the background on smaller screens */
+  .login-container::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 0;
+  }
+
+  html {
+      font-size: 3vw; /* Increase the base font size for smaller screens */
+    }
+  
+    h1, h2, h3 {
+      font-size: 2em; /* Adjust the font size for headings on smaller screens */
+    }
+  
+    p {
+      font-size: 1.2em; /* Adjust the font size for paragraphs on smaller screens */
+    }
+
+          /* Adjust the input and label font sizes for smaller screens */
+  .input-field {
+      font-size: 3em;
+  }
+
+  label {
+      font-size: 2em;
+  }
+
+  /* Adjust the button font size and padding for smaller screens */
+  .button {
+      font-size: 3em;
+      padding: 2em 4em;
+  }
+}
+
+
+
+
+
+
+/* Input Fields */
+.input-field {
+  width: 100%;
+  max-width: 5000px;
+  height: 40px;
+  padding: 1.5em; /* Use vw units for padding as well to maintain consistency */
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  font-size: 1em; /* Use vw units for font size to make it responsive */
+  margin-bottom: 2em; /* Use vw units for margin as well */
+}
+
+.email-input {
+background-color: #f1f1f1;
+margin-bottom: 30px;
+}
+
+.password-input {
+background-color: #f5f5f5;
+margin-top:10px;
+}
+
+/* Label Styles */
+.form-group {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  font-size: 1em; 
+
+}
+
+.company-login-logo{
+height: 50px;
+width: 50px;
+
+}
+/* Hover Effect */
+.input-field:hover {
+border-color: #7FDBFF;
+}
+
+/* Focus Effect */
+.input-field:focus {
+outline: none;
+border-color: #7FDBFF;
+box-shadow: 0 0 5px #7FDBFF;
+}
+
+/* Button */
+.button {
+  background-color: #263c8a;
+  color: white;
+  border: none;
+  width: 20em; /* Use vw units for button width to make it responsive */
+  max-width: 1000px; /* Limit the maximum button width for larger screens */
+  border-radius: 7px;
+  cursor: pointer;
+  padding: 1em 3em; /* Use vw units for padding to maintain responsiveness */
+  font-size: 1em; /* Use vw units for font size to make it responsive */
+  transition: background-color 0.3s ease;
+  margin-top: 0em; /* Use vw units for margin as well */
+}
+
+.button:hover {
+background-color: rgb(93, 93, 255);
+box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.side-line-log{
+border-left: 3px solid #426bff;
+display: flex;
+height: 90px;
+padding-left: -15px;
+padding-top: 10px;
+}
+.side-lines-log{
+border-right: 3px solid #426bff;
+
+height: 90px;
+padding-right: -15px;
+padding-top: 10px;
+margin-right: 8px;
+
+}

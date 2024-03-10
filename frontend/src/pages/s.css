@@ -1,0 +1,195 @@
+@import url('https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600&family=Inter:wght@400;600;700&display=swap');
+.pricing-container {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    border: none solid black; /* Add a border with 1px width and black color */
+    padding: 25px;
+    border-radius: 2px;
+    margin-bottom: 20px;
+    background-color: white;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+    width: 95%;
+  
+}
+.choose-project{
+    margin-bottom: 10px;
+}
+  .select-project, .create-pricing-name{
+    margin-right: 25px;
+  }
+
+
+.side-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    background-color: #ffffff;
+    width: 220px;
+    border-radius: 8px;
+    padding: 18px;
+    min-height: 650px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+}
+.side-container-1{
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    border: 1px solid gray;
+    padding: 4px;
+    border-radius: 4px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+}
+.List-Price{
+    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+.date-time{
+    font-size: 12px;
+    color: rgb(175, 175, 175);
+    font-family: Inter, monospace;
+    text-align: center;
+}
+.pricing-side-info{
+  font-size: 10px;
+  color: rgb(116, 116, 116);
+  font-family: Inter, monospace;
+  text-align: center;
+}
+.created-price{
+    border: 1px solid rgb(54, 158, 255);
+    color: rgb(73, 73, 73);
+    border-radius: 4px;
+    padding: 5px 5px;
+    cursor: pointer;
+    margin-top: 2px;
+    font-family: Inter, monospace;
+    display: flex;
+    font-size: 13px;
+    position: relative;
+}
+.created-price-label {
+
+  border: 1px solid rgb(54, 158, 255);
+  color: rgb(73, 73, 73);
+  border-radius: 4px;
+  padding: 5px 5px;
+  cursor: pointer;
+  margin-top: 2px;
+  font-family: Inter, monospace;
+  display: flex;
+  font-size: 13px;
+  column-gap: 5px;
+  position: relative;
+}
+.created-price-label:hover, .created-price:hover{
+ 
+  box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px, rgba(6, 24, 44, 0.65) 0px 4px 6px -1px, rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
+}
+.approved {
+  border-color: green;
+}
+
+.declined {
+  border-color: red;
+}
+.side-container-2 {
+    
+    overflow-y: scroll;
+    max-height: 250px; /* Adjust the height as needed */
+  }
+.side-subcontainer-2{
+  column-gap: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    padding: 5px;
+}
+.price-main{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: start;
+   
+    
+}
+.price-main-sub1{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    width: 95%;
+   
+}
+.side-sub-container-1, .side-sub-container-2{
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: column;
+
+
+}
+.modal{
+    color:black;
+}
+.pricing-sub-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px; /* Increase the gap between grid items */
+  }
+  
+  .input-container {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .input-container label {
+    margin-bottom: 5px;
+    font-weight: bold; /* Make the text bold */
+  }
+  
+  .sender-input {
+    width: 100%;
+  }
+  
+.pricing-table, .price-select{
+  width: 95%;
+}
+.button-pricing
+{
+  width: 40%;
+  height: 40px;
+}
+.button-pricing-container{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-content: center;
+}
+.price-side-container{
+  width: 20%;
+}
+.price-select{
+  width: 120px;
+
+}
+.circle-notification-view{
+  width: 8px;
+  height: 8px;
+  background-color: rgb(35, 178, 249);
+  border-radius: 100%;
+  position: absolute;
+  top: -2px;
+  right: -2px;
+}
+.circle-notification-view-approved{
+  width: 10px;
+  height: 10px;
+  background-color: rgb(249, 35, 35);
+  border-radius: 100%;
+  position: absolute;
+  top: -2px;
+  right: -2px;
+}
